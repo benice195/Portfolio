@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Rajdhani|VT323');
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #4f4848;
+    background: url("http://esportcenter.eu/uploads/monthly_2015_11/5651c19ba8e7c_3screen.jpg.3659347363b1bba7653d2e27be39a141.jpg") top center fixed;
+}
+
+/*-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-*/
+/*-------------------------HEADER-------------------------*/
+/*-------------------------------------------------------*/
+
+header {  
+    background-color: #313234;
+}
+nav {
+    position: fixed;
+    z-index: 100;
+}
+.container {
+    width:100%;
+}
+header > nav ul {
+    float: right;
+}
+header > nav ul > li > a {
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+}
+header > nav ul > li > a:hover {
+    background-color: #aa9a9a;
+}
+
+
+/*----------------------HEADER-ROW------------------------*/
+
+.row:before, .row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.row:after {
+    clear: both;
+}
+.container .row img {
+    width: 150px;
+    height: 50px;
+    background-color: slategray;
+}
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*---------------------HERO SECTION-----------------------*/
+/*--------------------------------------------------------*/
+
+.hero {
+    background-position: center;
+    padding-top: 200px;
+}
+
+
+/*---------------------HERO-SLOGAN-----------------------*/
+
+.slogan {
+    background-color: inherit;
+}
+.slogan h1 {
+    color: orange;
+    font-size: 38px;
+    padding: 15px;
+}
+.slogan h2 {
+    font-size: 48px;
+}
+[class^="btn-"] {
+    margin: 4px 2px;
+    padding: 15px 30px;
+    min-width: 160px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.btn-orange {
+    color: black;
+    opacity: 0.9;
+    background-image: linear-gradient(90deg, orange 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 300%;
+    margin-top: 25px;
+    background-color: darkgray;
+}
+.btn-orange:hover {
+    background-position: 0 100%;
+}
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*--------------------------GRID--------------------------*/
+/*--------------------------------------------------------*/
+
+
+.about h3 {
+    padding-top: 35px;
+}
+.grid p {
+    padding: 8px;
+}
+.image img {
+    max-width: 300px;
+    max-height: 700px;
+    margin-top: 15%;
+    border-radius: 10px;
+}
+.infotext{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*------------------------Technologies-------------------------*/
+/*--------------------------------------------------------*/
+
+
+.technologies .images img {
+    height:120px; 
+    width:120px;
+}
+.technologies .images ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.technologies .images ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.technologies {
+    min-height: 1000px;
+}
+.technologies h1 {
+    font-size: 30px;
+    padding-top: 50px;
+}
+.technologies h3 {
+    padding: 20px;
+}
+.technologies li:hover {
+    transform: scale(1.60);
+    transition: 1s;
+}
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*------------------------FEATURED------------------------*/
+/*--------------------------------------------------------*/
+
+.featured {
+    margin: 0 12% 20px 12%;
+}
+.featured h1 {
+    font-weight: 800;
+    padding-top: 60px;
+}
+
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*------------------------GALLERY-------------------------*/
+/*--------------------------------------------------------*/
+
+
+.gallery {
+    margin-bottom: 70px;
+    min-height: 900px;
+}
+
+.gallery .projects {
+    margin-top: 5%;
+}
+.gallery .line {
+    padding-left: 75px;
+}
+
+
+/*-----------------------GALLERY-IMG----------------------*/
+
+.img-1 {
+    background-image: url(http://imageshack.com/a/img924/5732/2l0Wy4.png);
+}
+.img-2 {
+    background-image: url(http://imageshack.com/a/img923/1056/Mg73g3.png);
+}
+.img-3 {
+    background-image: url(http://imageshack.com/a/img924/2861/vMBDvM.png);
+}
+.img-4 {
+    background-image: url(http://imageshack.com/a/img923/2010/B8JDSb.png);
+}
+.img-5 {
+    background-image: url(http://imageshack.com/a/img924/1418/wV1zf4.png);
+}
+
+[class*="img-"] {
+    height: 200px;
+}
+.col-41 {
+    width: 30%;
+    margin: 4px;
+}
+.col-41 .hidden {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 9, 0.8)
+}
+.col-41:hover {
+    transform: scale(1.20);
+    transition: 1.5s;
+}
+.col-41:hover .hidden p {
+    margin-top: 20%;
+    transform: scale(1.20);
+}
+.col-41:hover .hidden button {
+    opacity: 1;
+    transform: scale(1.20);
+}
+.col-41 .hidden button {
+    border: 0 solid grey;
+    background-color: #0094ff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.col-41 .hidden i.fa-lg {
+    height: 20px;
+    width: 25px;
+}
+
+
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*-------------------------FOOTER-------------------------*/
+/*--------------------------------------------------------*/
+
+
+.footer {
+    height: 500px;
+}
+.social .icon-btn {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 75px;
+    margin: 10px;
+}
+.social .facebook {
+    color: #3b5998;
+}
+.social .github {
+    color: #4183c4;
+}
+.social .icon-btn:hover {
+    transform: scale(1.10);
+    transition: 0.7s;
+}
+.social .facebook:hover {
+    background-color: #3b5998;
+}
+.social .github:hover {
+    background-color: #4183c4;
+}
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*-------------------------FOOTER2------------------------*/
+/*--------------------------------------------------------*/
+
+
+.footer2 {
+    padding: 5px;
+}
+.gallery, .technologies, .grid, .image img, .social .icon-btn {
+    margin-bottom: 100px;
+    border: 0px;
+    border-radius: 15px;
+}
+body, .container, .slogan {
+    margin: 0 auto;
+}
+body, [class*="col-"] {
+    font-family: 'Rajdhani', sans-serif;
+}
+body, .container {
+    max-width: 1200px;
+}
+body, .hero, [class*="col-"] {
+    background-size: cover;
+}
+nav, .footer2 {
+    background-color: black;
+}
+header > nav ul, .slogan h1, .col-41 .hidden i.fa-lg {
+    margin: 0;
+}
+header > nav ul, .grid {
+    padding: 0;
+}
+header > nav ul, .technologies .images ul {
+    list-style-type: none;
+}
+header > nav ul > li, [class^="btn-"] {
+    display: inline-block;
+}
+header > nav ul > li, .btn-orange a, .footer {
+    font-size: 20px;
+}
+header > nav ul > li, .slogan h1, .slogan h2, [class^="btn-"], .btn-orange a, .about, .technologies h1, .technologies h3, .col-41:hover .hidden p {
+    font-weight: bold;
+}
+header > nav ul > li > a, .slogan, .btn-orange:hover, .about, .featured h1, .footer2, .social .facebook:hover, .social .github:hover {
+    color: white;
+}
+header > nav ul > li > a, .btn-orange a {
+    text-decoration: none;
+}
+header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured h1 {
+    text-transform: uppercase;
+}
+.hero, .grid {
+    height: 1000px;
+}
+.hero, .img-1, .img-2, .img-3, .img-4, .img-5 {
+    position: relative;
+}
+.hero, .technologies .images ul {
+    display: flex;
+}
+.slogan, .grid, .images, .featured, .col-41 .hidden i.fa-lg, .footer, .footer2, [class*="col-"] {
+    text-align: center;
+} 
+.slogan, .btn-orange {
+    border: 0px solid;
+}
+.slogan, .col-41 .hidden button {
+    border-radius: 8px;
+}
+.grid, .gallery {
+    background: black;
+} 
+.about, .grid p, .technologies h3, .col-41 .hidden i.fa-lg {
+    font-size: 24px;
+}
+.grid p, .col-41:hover .hidden p {
+    color: ghostwhite;
+}
+.technologies, .footer {
+    background: ghostwhite;
+}
+.footer .fa-adress-book, .footer .fa-envelope-o, .footer .fa-volume-control-phone {
+    font-size: 26px;
+}
+.img-1, .img-2, .img-3, .img-4, .img-5, .col-41:hover .hidden {
+    visibility: visible;
+}
+.col-41 .hidden, .footer, .footer2 {
+    width: 100%;
+}
+
+
+/*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+/*-------------------------COLUMN-------------------------*/
+/*--------------------------------------------------------*/
+
+[class*="col-"] {
+    float: left;
+    min-height: 35px;
+    
+    
+    
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .col-s-20 {width: 20%;}
+    .col-s-40 {width: 40%;}
+    
+    .container ul {
+        font-weight: 900;
+    }
+    .container ul li a {
+        background-color: steelblue;
+        border: 2px solid steelblue;
+        border-radius: 10px;
+        line-height: 25px;
+    }
+    .slogan {
+        padding-top: 100px;
+    }
+    .slogan h2 {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    [class^="btn-"] {
+        padding: 15px 25px;
+    }
+    .row .image {
+        width: 100%;
+    }
+    .infotext {
+        padding: 20px;
+    }
+    .image img {
+        max-width: 250px;
+        max-height: 220px;
+    }
+    .infotext p {
+        font-size: 16px;
+    }
+    .gallery, .technologies, .grid {
+        margin-bottom: 50px;
+    }
+    .technologies ul li {
+        padding: 10px;
+    }
+    .gallery .line {
+        padding: 0px;
+    }
+    .img-1 ,.img-2, .img-3, .img-4, .img-5 {
+        margin-left: 25%;
+    }
+    .container ul, .about h3 {
+        font-size: 18px;
+    } 
+    .container, .container ul li, .row .image, .gallery {
+        display: block;
+    }
+    .container ul, .row image, .gallery, .img-1, .img-2, .img-3, .img-4, .img-5 {
+        float: none;
+    }
+    .container ul li, .gallery {
+        width: 96%;
+        margin: 2%;
+    }
+    .slogan h1, .gallery h1 {
+        font-size: 24px;
+    }
+    .row .image, .image img, .technologies ul li {
+        margin: 0;
+    }
+    .featured p, .footer {
+        font-size: 20px;
+    }
+    .technologies, .gallery {
+        max-height: 1600px;
+    }
+
+
+
+
+
+}
+@media (max-width: 480px) {
+    /* For desktop: */
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    .col-xs-20 {width: 20%;}
+    .col-xs-40 {width: 40%;}
+    
+    .hero {
+        height: 600px;
+    }
+    .slogan h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    [class^="btn-"] {
+        padding: 10px 20px;
+    }
+    .image img {
+        max-width: 150px;
+    }
+    .grid {
+        height: 1200px;
+    }
+    .technologies h1 {
+        padding-top: 20px;
+    }
+    .technologies h3 {
+        padding: 5px;
+    }
+    .technologies .images ul {
+        padding: 0px;
+    }
+    .gallery, .technologies, .grid {
+        margin-bottom: 50px;
+    }
+    .img-1, .img-2, .img-3, .img-4, .img-5 {
+        background-position: center;
+    }
+    .footer {
+        max-height: 430px;
+    }
+    .technologies h3, .footer, .footer .fa-adress-book, .footer .fa-envelope-o, .footer .fa-volume-control-phone {
+        font-size: 16px;
+    }
+    .social .icon-btn {
+        font-size: 28px;
+    }
+    .slogan h1, .technologies h1, .gallery h1, .footer h2 {
+        font-size: 20px;
+    }
+}
