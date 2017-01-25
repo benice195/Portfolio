@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Rajdhani|VT323');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 
 * {
@@ -34,7 +37,7 @@ header > nav ul > li > a {
     display: block;
 }
 header > nav ul > li > a:hover {
-    background-color: #aa9a9a;
+    background-color: slategrey;
 }
 
 
@@ -68,13 +71,51 @@ header > nav ul > li > a:hover {
 .slogan {
     background-color: inherit;
 }
+
 .slogan h1 {
-    color: orange;
     font-size: 38px;
     padding: 15px;
 }
 .slogan h2 {
     font-size: 48px;
+}
+.niceButton {
+	font-family: 'Overpass Mono', monospace;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#a3a3a3 0%,
+		#3b3b3b 50%,
+		#242424 50%,
+		#000000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#a3a3a3),
+		color-stop(0.50, #3b3b3b),
+		color-stop(0.50, #242424),
+		to(#000000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,0.2);
+    opacity:0.5;
+}
+.niceButton:hover {
+    padding:15px 45px;
 }
 [class^="btn-"] {
     margin: 4px 2px;
@@ -86,18 +127,8 @@ header > nav ul > li > a:hover {
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
-.btn-orange {
-    color: black;
-    opacity: 0.9;
-    background-image: linear-gradient(90deg, orange 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 300%;
-    margin-top: 25px;
-    background-color: darkgray;
-}
-.btn-orange:hover {
-    background-position: 0 100%;
-}
+
+
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
 /*--------------------------GRID--------------------------*/
@@ -109,6 +140,9 @@ header > nav ul > li > a:hover {
 }
 .grid p {
     padding: 8px;
+}
+.image {
+    margin-top: 5%;
 }
 .image img {
     max-width: 300px;
@@ -126,7 +160,26 @@ header > nav ul > li > a:hover {
 /*------------------------Technologies-------------------------*/
 /*--------------------------------------------------------*/
 
-
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  25% {
+      transform: scale(1.3)
+  }
+  50% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .technologies .images img {
     height:120px; 
     width:120px;
@@ -134,14 +187,24 @@ header > nav ul > li > a:hover {
 .technologies .images ul {
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0px;
 }
 .technologies .images ul li {
     margin-left: 5px;
     margin-right: 5px;
 }
-.technologies {
-    min-height: 1000px;
+.technologies .images ul li img {
+    animation-duration: 4.5s;
+    animation-name: bounceIn;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
 }
+.technologies .images ul li p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .technologies h1 {
     font-size: 30px;
     padding-top: 50px;
@@ -181,7 +244,7 @@ header > nav ul > li > a:hover {
     margin-top: 5%;
 }
 .gallery .line {
-    padding-left: 75px;
+    padding-left: 2%;
 }
 
 
@@ -204,10 +267,10 @@ header > nav ul > li > a:hover {
 }
 
 [class*="img-"] {
-    height: 200px;
+    height: 350px;
 }
 .col-41 {
-    width: 30%;
+    width: 32%;
     margin: 4px;
 }
 .col-41 .hidden {
@@ -216,25 +279,36 @@ header > nav ul > li > a:hover {
     top: 0;
     left: 0;
     visibility: hidden;
-    background-color: rgba(0, 0, 9, 0.8)
+    background-color: rgba(0, 0, 9, 0.8);
+
 }
-.col-41:hover {
-    transform: scale(1.20);
-    transition: 1.5s;
+.col-41:hover .hidden {
+    transition: 2s ease;
+    opacity: 0.8;
 }
 .col-41:hover .hidden p {
-    margin-top: 20%;
-    transform: scale(1.20);
+    margin-top: 30%;
+    font-size: 22px;
+    
 }
 .col-41:hover .hidden button {
     opacity: 1;
-    transform: scale(1.20);
+    height: 30px;
+    width: 80px;
+}
+.col-41:hover .hidden button:hover {
+    background-color: orange;
+}
+.col-41:hover .hidden button i.fa-lg {
+    color: black;
 }
 .col-41 .hidden button {
-    border: 0 solid grey;
-    background-color: #0094ff;
+    border: 0 solid white;
+    background-color: white;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 35%;
+    
 }
 .col-41 .hidden i.fa-lg {
     height: 20px;
@@ -261,21 +335,25 @@ header > nav ul > li > a:hover {
     line-height: 75px;
     margin: 10px;
 }
-.social .facebook {
-    color: #3b5998;
+.social .fa-facebook {
+    color: blue;
 }
-.social .github {
-    color: #4183c4;
+.social .fa-github {
+    color: black;
 }
+
 .social .icon-btn:hover {
     transform: scale(1.10);
     transition: 0.7s;
 }
 .social .facebook:hover {
-    background-color: #3b5998;
+    background-color: darkblue;
 }
 .social .github:hover {
-    background-color: #4183c4;
+    background-color: black;
+}
+.social .facebook:hover .fa-facebook, .social .github:hover .fa-github {
+    color: white;
 }
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
@@ -285,8 +363,9 @@ header > nav ul > li > a:hover {
 
 .footer2 {
     padding: 5px;
+    font-size: 18px;
 }
-.gallery, .technologies, .grid, .image img, .social .icon-btn {
+.gallery, .technologies, .grid, .image img {
     margin-bottom: 100px;
     border: 0px;
     border-radius: 15px;
@@ -327,14 +406,14 @@ header > nav ul > li, .slogan h1, .slogan h2, [class^="btn-"], .btn-orange a, .a
 header > nav ul > li > a, .slogan, .btn-orange:hover, .about, .featured h1, .footer2, .social .facebook:hover, .social .github:hover {
     color: white;
 }
-header > nav ul > li > a, .btn-orange a {
+header > nav ul > li > a, .btn-orange a, .niceButton {
     text-decoration: none;
 }
 header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured h1 {
     text-transform: uppercase;
 }
-.hero, .grid {
-    height: 1000px;
+.hero, .grid, .technologies, .gallery {
+    min-height: 1000px;
 }
 .hero, .img-1, .img-2, .img-3, .img-4, .img-5 {
     position: relative;
@@ -342,18 +421,21 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .hero, .technologies .images ul {
     display: flex;
 }
-.slogan, .grid, .images, .featured, .col-41 .hidden i.fa-lg, .footer, .footer2, [class*="col-"] {
+.slogan, .grid, .images, .featured, .footer, .footer2, [class*="col-"] {
     text-align: center;
 } 
 .slogan, .btn-orange {
     border: 0px solid;
 }
-.slogan, .col-41 .hidden button {
+.slogan {
     border-radius: 8px;
 }
 .grid, .gallery {
     background: black;
 } 
+.grid p, .technologies h1, .technoligies h3, .footer2 {
+    font-family: 'Overpass', sans-serif;
+    } 
 .about, .grid p, .technologies h3, .col-41 .hidden i.fa-lg {
     font-size: 24px;
 }
@@ -372,6 +454,14 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .col-41 .hidden, .footer, .footer2 {
     width: 100%;
 }
+.img-1, .img-2, .img-3, .img-4, .img-5 {
+    border: 0px;
+    border-radius: 10px;
+}
+.slogan h1, .niceButton:hover {
+    color: orange;
+}
+
 
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
@@ -446,8 +536,8 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
         font-weight: 900;
     }
     .container ul li a {
-        background-color: steelblue;
-        border: 2px solid steelblue;
+        background-color: darkgrey;
+        border: 2px solid grey;
         border-radius: 10px;
         line-height: 25px;
     }
@@ -495,6 +585,10 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .container ul, .row image, .gallery, .img-1, .img-2, .img-3, .img-4, .img-5 {
         float: none;
     }
+    .img-1, .img-2, .img-3, .img-4, .img-5 {
+        margin: 10px 16.67%;
+    }
+    
     .container ul li, .gallery {
         width: 96%;
         margin: 2%;
@@ -508,7 +602,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .featured p, .footer {
         font-size: 20px;
     }
-    .technologies, .gallery {
+    .technologies {
         max-height: 1600px;
     }
 
