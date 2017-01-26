@@ -137,7 +137,7 @@ header > nav ul > li > a:hover {
 /*--------------------------------------------------------*/
 
 .about {
-        height: 100px;
+    height: 100px;
 }
 .about h3 {
     padding-top: 35px;
@@ -219,9 +219,7 @@ header > nav ul > li > a:hover {
 .technologies h3 {
     padding: 5px;
 }
-.images {
-    margin-top: 50px;
-}
+
 .technologies li:hover {
     transform: scale(1.20);
     transition: 1s;
@@ -240,6 +238,7 @@ header > nav ul > li > a:hover {
 .featured h1 {
     font-weight: 800;
     padding-top: 60px;
+    margin-top: 0;
 }
 
 
@@ -249,7 +248,7 @@ header > nav ul > li > a:hover {
 
 
 .gallery {
-    margin-bottom: 70px;
+    
     min-height: 900px;
 }
 
@@ -381,7 +380,6 @@ header > nav ul > li > a:hover {
     font-size: 18px;
 }
 .gallery, .technologies, .grid, .image img {
-    margin-bottom: 100px;
     border: 0px;
     border-radius: 15px;
 }
@@ -681,5 +679,10 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     }
     .slogan h1, .technologies h1, .gallery h1, .footer h2 {
         font-size: 20px;
+    }
+}
+@media (min-width: 1500px) {
+    .infotext {
+        margin-top: 5%;
     }
 }
