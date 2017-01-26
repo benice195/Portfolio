@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 @import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
 
 
 * {
@@ -82,7 +83,6 @@ header > nav ul > li > a:hover {
 .niceButton {
 	font-family: 'Overpass Mono', monospace;
 	font-size: 14px;
-	color: #ffffff;
 	padding: 10px 20px;
 	background: -moz-linear-gradient(
 		top,
@@ -112,10 +112,12 @@ header > nav ul > li > a:hover {
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,1),
 		0px 1px 0px rgba(255,255,255,0.2);
-    opacity:0.5;
+    opacity:0.8;
+    
 }
 .niceButton:hover {
     padding:15px 45px;
+    transition: 0.7s;
 }
 [class^="btn-"] {
     margin: 4px 2px;
@@ -134,7 +136,9 @@ header > nav ul > li > a:hover {
 /*--------------------------GRID--------------------------*/
 /*--------------------------------------------------------*/
 
-
+.about {
+        height: 100px;
+}
 .about h3 {
     padding-top: 35px;
 }
@@ -142,7 +146,8 @@ header > nav ul > li > a:hover {
     padding: 8px;
 }
 .image {
-    margin-top: 5%;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 .image img {
     max-width: 300px;
@@ -166,7 +171,7 @@ header > nav ul > li > a:hover {
     opacity: 0;
   }
   25% {
-      transform: scale(1.3)
+      transform: scale(1.2)
   }
   50% {
     transform: scale(0.7);
@@ -190,14 +195,14 @@ header > nav ul > li > a:hover {
     padding: 0px;
 }
 .technologies .images ul li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .technologies .images ul li img {
     animation-duration: 4.5s;
     animation-name: bounceIn;
     animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 .technologies .images ul li p {
     font-family: 'Overpass', sans-serif;
@@ -208,13 +213,20 @@ header > nav ul > li > a:hover {
 .technologies h1 {
     font-size: 30px;
     padding-top: 50px;
+    margin-top: 150px;
 }
 .technologies h3 {
-    padding: 20px;
+    padding: 5px;
+}
+.images {
+    margin-top: 50px;
 }
 .technologies li:hover {
-    transform: scale(1.60);
+    transform: scale(1.20);
     transition: 1s;
+}
+#ajax {
+    width:180px;
 }
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
@@ -279,11 +291,11 @@ header > nav ul > li > a:hover {
     top: 0;
     left: 0;
     visibility: hidden;
-    background-color: rgba(0, 0, 9, 0.8);
+    background-color: rgba(0, 0, 0, 1);
 
 }
 .col-41:hover .hidden {
-    transition: 2s ease;
+    transition: 1s ease;
     opacity: 0.8;
 }
 .col-41:hover .hidden p {
@@ -313,6 +325,7 @@ header > nav ul > li > a:hover {
 .col-41 .hidden i.fa-lg {
     height: 20px;
     width: 25px;
+    font-size: 28px;
 }
 
 
@@ -332,11 +345,12 @@ header > nav ul > li > a:hover {
     border-radius: 50%;
     cursor: pointer;
     font-size: 40px;
-    line-height: 75px;
+    
     margin: 10px;
+    border-style: none;;
 }
 .social .fa-facebook {
-    color: blue;
+    color: #3B5998;
 }
 .social .fa-github {
     color: black;
@@ -347,12 +361,12 @@ header > nav ul > li > a:hover {
     transition: 0.7s;
 }
 .social .facebook:hover {
-    background-color: darkblue;
+    background-color: #3B5998;
 }
 .social .github:hover {
     background-color: black;
 }
-.social .facebook:hover .fa-facebook, .social .github:hover .fa-github {
+.social .facebook:hover .fa-facebook, .social .github:hover .fa-github, .niceButton {
     color: white;
 }
 
@@ -376,9 +390,7 @@ body, .container, .slogan {
 body, [class*="col-"] {
     font-family: 'Rajdhani', sans-serif;
 }
-body, .container {
-    max-width: 1200px;
-}
+
 body, .hero, [class*="col-"] {
     background-size: cover;
 }
@@ -409,7 +421,7 @@ header > nav ul > li > a, .slogan, .btn-orange:hover, .about, .featured h1, .foo
 header > nav ul > li > a, .btn-orange a, .niceButton {
     text-decoration: none;
 }
-header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured h1 {
+header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured h1, .niceButton {
     text-transform: uppercase;
 }
 .hero, .grid, .technologies, .gallery {
@@ -431,12 +443,12 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     border-radius: 8px;
 }
 .grid, .gallery {
-    background: black;
+    background: rgba(0, 0, 0, 0.6);
 } 
 .grid p, .technologies h1, .technoligies h3, .footer2 {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Arsenal', sans-serif;
     } 
-.about, .grid p, .technologies h3, .col-41 .hidden i.fa-lg {
+.about, .grid p, .technologies h3 {
     font-size: 24px;
 }
 .grid p, .col-41:hover .hidden p {
