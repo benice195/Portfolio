@@ -116,8 +116,7 @@ header > nav ul > li > a:hover {
     
 }
 .niceButton:hover {
-    padding:15px 45px;
-    transition: 0.7s;
+    opacity: 0.7;
 }
 [class^="btn-"] {
     margin: 4px 2px;
@@ -138,12 +137,16 @@ header > nav ul > li > a:hover {
 
 .about {
     height: 100px;
+    text-align: center;
 }
 .about h3 {
     padding-top: 35px;
 }
 .grid p {
     padding: 8px;
+}
+.grid p:last-child {
+    text-align: center;
 }
 .image {
     padding-right: 50px;
@@ -159,6 +162,7 @@ header > nav ul > li > a:hover {
 .infotext{
     padding-left: 50px;
     padding-top: 20px;
+    text-align: justify;
 }
 
 
@@ -214,16 +218,13 @@ header > nav ul > li > a:hover {
 .technologies h1 {
     font-size: 30px;
     padding-top: 50px;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .technologies h3 {
     padding: 5px;
 }
 
-.technologies li:hover {
-    transform: scale(1.20);
-    transition: 1s;
-}
+
 #ajax {
     width:180px;
 }
@@ -282,8 +283,8 @@ header > nav ul > li > a:hover {
     height: 350px;
 }
 .col-41 {
-    width: 32%;
-    margin: 4px;
+    width: 30%;
+    margin: 1.5%;
 }
 .col-41 .hidden {
     height: 100%;
@@ -294,9 +295,13 @@ header > nav ul > li > a:hover {
     background-color: rgba(0, 0, 0, 1);
 
 }
+.hidden button:hover {
+    cursor: pointer;
+}
 .col-41:hover .hidden {
     transition: 1s ease;
-    opacity: 0.8;
+    opacity: 0.81;
+    text-align: center;
 }
 .col-41:hover .hidden p {
     margin-top: 30%;
@@ -304,9 +309,9 @@ header > nav ul > li > a:hover {
     
 }
 .col-41:hover .hidden button {
-    opacity: 1;
+    opacity: 0.7;
     height: 30px;
-    width: 80px;
+    width: 50px;
 }
 .col-41:hover .hidden button:hover {
     background-color: orange;
@@ -314,12 +319,16 @@ header > nav ul > li > a:hover {
 .col-41:hover .hidden button i.fa-lg {
     color: black;
 }
+.col-41:hover .hidden button:active {
+    background-color: red;
+}
 .col-41 .hidden button {
     border: 0 solid white;
     background-color: white;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 35%;
+    border-radius: 5%;
+    opacity: 0.6;
     
 }
 .col-41 .hidden i.fa-lg {
@@ -341,11 +350,10 @@ header > nav ul > li > a:hover {
 .social .icon-btn {
     width: 75px;
     height: 75px;
-    background-color: white;
+    background-color: inherit;
     border-radius: 50%;
     cursor: pointer;
     font-size: 40px;
-    
     margin: 10px;
     border-style: none;;
 }
@@ -354,6 +362,12 @@ header > nav ul > li > a:hover {
 }
 .social .fa-github {
     color: black;
+}
+.social .fa-linkedin {
+    color: #006fa6;
+}
+.social .linkedin:hover {
+    background-color: #006fa6;
 }
 
 .social .icon-btn:hover {
@@ -366,7 +380,7 @@ header > nav ul > li > a:hover {
 .social .github:hover {
     background-color: black;
 }
-.social .facebook:hover .fa-facebook, .social .github:hover .fa-github, .niceButton {
+.social .facebook:hover .fa-facebook, .social .linkedin:hover .fa-linkedin, .social .github:hover .fa-github, .niceButton {
     color: white;
 }
 
@@ -379,10 +393,7 @@ header > nav ul > li > a:hover {
     padding: 5px;
     font-size: 18px;
 }
-.gallery, .technologies, .grid, .image img {
-    border: 0px;
-    border-radius: 15px;
-}
+
 body, .container, .slogan {
     margin: 0 auto;
 }
@@ -424,7 +435,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     text-transform: uppercase;
 }
 .hero, .grid, .technologies, .gallery {
-    min-height: 1000px;
+    min-height: 850px;
 }
 .hero, .img-1, .img-2, .img-3, .img-4, .img-5 {
     position: relative;
@@ -432,7 +443,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .hero, .technologies .images ul {
     display: flex;
 }
-.slogan, .grid, .images, .featured, .footer, .footer2, [class*="col-"] {
+.slogan, .images, .featured, .footer, .footer2 {
     text-align: center;
 } 
 .slogan, .btn-orange {
@@ -454,7 +465,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     color: ghostwhite;
 }
 .technologies, .footer {
-    background: ghostwhite;
+    background: rgba(255, 255, 255, 0.8);
 }
 .footer .fa-adress-book, .footer .fa-envelope-o, .footer .fa-volume-control-phone {
     font-size: 26px;
@@ -468,6 +479,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .img-1, .img-2, .img-3, .img-4, .img-5 {
     border: 0px;
     border-radius: 10px;
+    background-position: center;
 }
 .slogan h1, .niceButton:hover {
     color: orange;
