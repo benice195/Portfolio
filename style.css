@@ -148,12 +148,13 @@ header > nav ul > li > a:hover {
 .image {
     padding-right: 50px;
     padding-top: 20px;
+
 }
 .image img {
-    max-width: 300px;
-    max-height: 700px;
     margin-top: 15%;
-    border-radius: 10px;
+    width: 100%;
+    padding: 15%;
+    padding-top: 0%;
 }
 .infotext{
     padding-left: 50px;
@@ -570,8 +571,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
         padding: 20px;
     }
     .image img {
-        max-width: 250px;
-        max-height: 220px;
+        width: 100%;;
     }
     .infotext p {
         font-size: 16px;
@@ -608,8 +608,9 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .slogan h1, .gallery h1 {
         font-size: 24px;
     }
-    .row .image, .image img, .technologies ul li {
+    .row .image, .technologies ul li {
         margin: 0;
+        padding: 0;
     }
     .featured p, .footer {
         font-size: 20px;
@@ -650,9 +651,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     [class^="btn-"] {
         padding: 10px 20px;
     }
-    .image img {
-        max-width: 150px;
-    }
+
     .grid {
         height: 1200px;
     }
