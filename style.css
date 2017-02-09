@@ -278,7 +278,9 @@ header > nav ul > li > a:hover {
 .img-5 {
     background-image: url(http://imageshack.com/a/img924/1418/wV1zf4.png);
 }
-
+.img-6 {
+    background-image: url(http://i.imgur.com/oT2WH8x.png);
+}
 [class*="img-"] {
     height: 350px;
 }
@@ -437,7 +439,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .hero, .grid, .technologies, .gallery {
     min-height: 850px;
 }
-.hero, .img-1, .img-2, .img-3, .img-4, .img-5 {
+.hero, .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
     position: relative;
 }
 .hero, .technologies .images ul {
@@ -470,7 +472,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .footer .fa-adress-book, .footer .fa-envelope-o, .footer .fa-volume-control-phone {
     font-size: 26px;
 }
-.img-1, .img-2, .img-3, .img-4, .img-5, .col-41:hover .hidden {
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .col-41:hover .hidden {
     visibility: visible;
 }
 .col-41 .hidden, .footer, .footer2 {
