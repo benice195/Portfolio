@@ -281,6 +281,9 @@ header > nav ul > li > a:hover {
 .img-6 {
     background-image: url(http://i.imgur.com/oT2WH8x.png);
 }
+.img-7 {
+    background-image: url(http://i.imgur.com/YqEryrQ.png);
+}
 [class*="img-"] {
     height: 350px;
 }
@@ -439,7 +442,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .hero, .grid, .technologies, .gallery {
     min-height: 850px;
 }
-.hero, .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+.hero, .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
     position: relative;
 }
 .hero, .technologies .images ul {
@@ -472,13 +475,13 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
 .footer .fa-adress-book, .footer .fa-envelope-o, .footer .fa-volume-control-phone {
     font-size: 26px;
 }
-.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .col-41:hover .hidden {
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .col-41:hover .hidden {
     visibility: visible;
 }
 .col-41 .hidden, .footer, .footer2 {
     width: 100%;
 }
-.img-1, .img-2, .img-3, .img-4, .img-5 {
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
     border: 0px;
     border-radius: 10px;
     background-position: center;
@@ -597,7 +600,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .gallery .line {
         padding: 0px;
     }
-    .img-1 ,.img-2, .img-3, .img-4, .img-5, img-6 {
+    .img-1 ,.img-2, .img-3, .img-4, .img-5, img-6, .img-7 {
         margin-left: 25%;
     }
     .container ul, .about h3 {
@@ -606,10 +609,10 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .container, .container ul li, .row .image, .gallery {
         display: block;
     }
-    .container ul, .row image, .gallery, .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+    .container ul, .row image, .gallery, .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
         float: none;
     }
-    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
         margin: 10px 16.67%;
     }
     
@@ -679,7 +682,7 @@ header > nav ul > li > a, .about, .technologies h1, .technologies h3, .featured 
     .gallery, .technologies, .grid {
         margin-bottom: 50px;
     }
-    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+    .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
         background-position: center;
     }
     .footer {
